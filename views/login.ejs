@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript" src="/assets/timeTable2.js">
+
+  </script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <title>Login to the Time Table Maker 2.0</title>
+</head>
+
+<body>
+  <div class="rw">
+    <div class="column" id="cl1">
+
+    </div>
+    <div class="column" id="cl2">
+      <div class="videoContainer">
+        <img src="/assets/time_table_logo.gif" alt="animated" id="myVideo" height="150" width="150">
+      </div>
+      <div class="loginBox">
+        <form class="loginForm" method="post" id="lgForm">
+          <label class="loginName">Email-id</label>
+          <input type="text" name="logemail" value="" class="inputName"><br />
+          <label class="pass">Password</label>
+          <input type="password" name="logPassword" value="" class="passEntry">
+        </form>
+        <p class="fp"><a href="#">Forgot password?</a></p>
+        <div class="lognBtn">
+          <button type="submit" name="button" onclick="loginSubmit();">Login</button>
+          <button type="submit" name="button" onclick="window.location.href = '/userReg'">Sign up</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

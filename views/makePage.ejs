@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript" src="/assets/timeTable2.js">
+
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="dropdown">
+    <button type="button" name="button" class="btn dropdown-toggle" data-toggle='dropdown'><i class="fas fa-user userIcon"></i> <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="/logout">Logout <i class="fas fa-sign-out-alt logoutIcon"></i></a></li>
+      <li><a href="#">My Profile <i class="far fa-user-circle profileIcon"></i></a></li>
+    </ul>
+  </div>
+  <form method="post">
+    <div class="wrapper">
+      <div class="boxSerialNumber active">
+        <label for="sid">Enter the serial number</label>
+        <input type="number" name="sid" value="">
+      </div>
+      <div class="startTime">
+        <label for="startTime">Enter the start time</label>
+        <input type="text" name="start" value="">
+      </div>
+      <div class="endTime">
+        <label for="endTime">Enter the end time</label>
+        <input type="text" name="end" value="">
+      </div>
+      <div class="desc">
+        <label for="desc">Enter description</label>
+        <input type="text" name="desc" value="">
+      </div>
+      <div class="submitNew">
+        <button type="submit" name="button">Submit</button>
+      </div>
+    </div>
+  </form>
+  <div class="icons">
+    <button onclick="prevSlide()" class="preBt"><i class="fas fa-chevron-circle-left prevArrow"></i></button>
+    <button type="button" name="button" class="nextBt" onclick="nextSlide()"><i class="fas fa-chevron-circle-right nextArrow"></i></button>
+  </div>
+  <div class="submitBtn">
+    <button type="button" name="button" class="finalBtn"><a href="/finalTimeTable">Make the final time table</a></button>
+  </div>
+  <!-- <div class="logoutBtn">
+    <a href="/logout">Logout</a>
+  </div> -->
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+
+  <script type="text/javascript" src="/assets/timeTable2.js">
+
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/style.css">
+  <title>Final Time Table</title>
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid text-center align-middle finalHeading">
+    <div class="dropdown">
+      <button type="button" name="button" class="btn dropdown-toggle" data-toggle='dropdown'><i class="fas fa-user userIcon"></i> <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="/logout">Logout <i class="fas fa-sign-out-alt logoutIcon"></i></a></li>
+        <li><a href="#">My Profile <i class="far fa-user-circle profileIcon"></i></a></li>
+      </ul>
+    </div>
+    <div class="container h-100">
+      <h1 class="display-1">Final Time Table</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <% if (details.length === 0) { %>
+      <div class="jumbotron jumbotron-fluid text-center align-middle">
+        <div class="container h-100">
+          <h1 class="display-1" id="timeTableContents">Time table empty</h1>
+        </div>
+      </div>
+      <% } else { %>
+      <div class="row brder">
+        <div class="col-sm-2">
+          <h4>S.no</h4>
+        </div>
+        <div class="col-sm-2">
+          <h4>Start Time</h4>
+        </div>
+        <div class="col-sm-2">
+          <h4>End Time</h4>
+        </div>
+        <div class="col-sm-6">
+          <h4>Description</h4>
+        </div>
+      </div>
+      <% for(var i = 0; i<details.length;i++) { %>
+      <div class="row brder">
+        <div class="col-sm-2" id="timeTableContents">
+          <h4><%= details[i].sid %></h4>
+        </div>
+        <div class="col-sm-2" id="timeTableContents">
+          <h4><%= details[i].start %></h4>
+        </div>
+        <div class="col-sm-2" id="timeTableContents">
+          <h4><%= details[i].end %></h4>
+        </div>
+        <div class="col-sm-6" id="timeTableContents">
+          <h4><%= details[i].desc %></h4>
+        </div>
+      </div>
+      <% } %>
+      <% } %>
+    </div>
+  </div>
+</body>
+
+</html>
