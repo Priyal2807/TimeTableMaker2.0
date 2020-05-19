@@ -1,0 +1,307 @@
+body {
+  /* background-color: #1C2833; */
+  background-color: #D6DBDF;
+  height: 100%;
+}
+
+p {
+  font-family: 'Pangolin', cursive;
+}
+
+.mainHeading {
+  /* background-color: #00FF99; */
+  background-color: #85C1E9;
+}
+
+#homePageButton {
+  font-family: Pangolin, cursive;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+#homePageButton.button-pulse {
+  animation: borderPulse 1000ms infinite ease-out, colorShift 10000ms infinite ease-in;
+}
+
+@keyframes borderPulse {
+  0% {
+    box-shadow: inset 0px 0px 0px 1px #33FF99, 0px 0px 0px 0px #33FF66;
+  }
+
+  100% {
+    box-shadow: inset 0px 0px 0px 2px #33FF33, 0px 0px 0px 3px #00FF99;
+  }
+}
+
+/* .wrapper {
+  text-align: center;
+} */
+.boxSerialNumber, .startTime, .endTime, .desc, .submitNew {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
+  box-shadow: 5px 5px 7px 1px #8493a2;
+  /*background-color: #2C3E50;*/
+  /* background-color: #00FF99; */
+  background-color: #85C1E9;
+  text-align: center;
+  transition: transform 0.5s;
+  /* animation: spin 1s linear infinite;
+  animation-fill-mode: initial;
+  animation-play-state: paused; */
+}
+
+/*
+.boxSerialNumber:hover, .startTime:hover, .endTime:hover {
+  animation-play-state: running;
+} */
+/* @keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+} */
+.boxSerialNumber:hover, .startTime:hover, .endTime:hover, .desc:hover, .submitNew:hover {
+  transform: scale(1.05);
+}
+
+label {
+  font-family: Pangolin, cursive;
+  color: black;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: unset;
+}
+
+input {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  /* animation: inputPulse 1000ms infinite ease-out; */
+  /*background-color: #AEB6BF;*/
+  background-color: white;
+  color: black;
+  font-family: Pangolin, cursive;
+  padding: 5px 5px;
+}
+
+.icons, .submitBtn {
+  padding: 20px 0px;
+  height: 50px;
+  text-align: center;
+}
+
+.submitBtn {
+  margin-top: 15px;
+}
+
+.prevArrow, .nextArrow {
+  color: black;
+  font-size: 40px;
+}
+
+.prevArrow:hover, .nextArrow:hover {
+  color: #AEB6BF
+}
+
+.icons button {
+  border: none;
+  background: none;
+}
+
+.submitNew button {
+  padding: 1px;
+  font-family: Pangolin, cursive;
+  border-radius: 8px;
+  font-size: 20px;
+  color: black;
+  /* background-color: #AEB6BF; */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 5px;
+}
+
+.finalBtn {
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%;
+  transition: transform 0.5s;
+  font-family: Pangolin, cursive;
+  border-radius: 10px;
+}
+
+.finalBtn:hover {
+  transform: scale(1.05);
+}
+
+.finalBtn a {
+  color: black;
+}
+
+.rw, .Userrw {
+  height: auto;
+  width: 100%;
+}
+
+#cl1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-image: url(bimg.jpg);
+  background-size: cover;
+}
+
+#cl2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  left: 50%;
+  background-color: #D6DBDF;
+}
+
+.Userrw #cl1 {
+  background-image: url(userImg.jpg);
+}
+
+.videoContainer {
+  text-align: center;
+}
+
+#myVideo {
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 6px 2px #090b0d;
+}
+
+.loginBox, .userBox {
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.loginForm, .userForm {
+  padding: 4px 4px 4px 4px;
+  /* background-color: #CCD1D1; */
+  border-radius: 8px;
+  height: 40%;
+}
+
+.userForm {
+  height: 75%;
+}
+
+.loginName, .pass, .userName, .email, .Userpass {
+  font-family: inherit;
+  font-size: 16px;
+  display: inline-block;
+  text-align: left;
+  width: 150px;
+  top: 0;
+  transform: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.inputName, .passEntry, .emailID {
+  padding: 2px 2px 2px 2px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: none;
+  animation: none;
+  top: 0;
+  transform: none;
+  color: black;
+  font-size: 12px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.fp {
+  font-size: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.lognBtn button, .userRegBtn button {
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 7px;
+  padding: 3px 3px 3px 3px 3px;
+  box-shadow: none;
+}
+
+.lognBtn button:hover, .userRegBtn button:hover {
+  background-color: #B2BABB;
+}
+
+.logoutBtn a {
+  padding: 4px 4px 4px 4px;
+  border-radius: 4px;
+  background-color: #B2BABB;
+  top: 0;
+  float: right;
+  margin-right: 10px;
+  color: black;
+  margin-top: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.dropdown, .dropup {
+  right: 0;
+  position: absolute;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.dropdown-menu {
+  font-size: 12px;
+  width: 190%;
+  height: auto;
+  min-width: unset;
+}
+
+.dropdown btn, .dropup btn {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.userIcon {
+  font-size: 14px;
+}
+
+.logoutIcon, .profileIcon {
+  font-size: 12px;
+  display: inline;
+  margin-right: 3px;
+  float: right;
+}
+
+.dropdown-menu li a {
+  display: inline;
+  padding: 3px 14px;
+}
+
+.finalHeading {
+  background-color: #85C1E9;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#timeTableContents {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.brder {
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #BFC9CA;
+}
+
+/* @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+} */
