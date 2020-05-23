@@ -3,6 +3,7 @@ html, body {
   background-color: #D6DBDF;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 p {
@@ -145,27 +146,34 @@ input {
   color: black;
 }
 
-.rw, .Userrw {
-  height: auto;
-  width: 100%;
+.loginRow, .Userrw {
+  height: 100%;
 }
 
-#cl1 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  background-image: url(bimg.jpg);
-  background-size: cover;
+@media (min-width: 1200px) {
+  #cl1 {
+    background-image: url(bimg.jpg);
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  #cl1 {
+    background-image: url(bimg.jpg);
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  #cl1 {
+    background-image: none;
+    height: 0%;
+  }
 }
 
 #cl2 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  left: 50%;
   background-color: #D6DBDF;
+  height: 100%;
 }
 
 .Userrw #cl1 {
@@ -184,8 +192,8 @@ input {
 
 .loginBox, .userBox {
   text-align: center;
-  height: 200px;
-  margin-top: 50px;
+  height: auto;
+  margin-top: 10%;
 }
 
 .loginForm, .userForm {
